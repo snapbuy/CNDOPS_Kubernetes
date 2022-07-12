@@ -1,4 +1,4 @@
-FROM golang:1.18.3 darwin/arm64 AS build
+FROM golang:1.11-alpine AS build
 
 WORKDIR /src/
 COPY main.go go.* /src/
